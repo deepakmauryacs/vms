@@ -17,7 +17,7 @@ class Api extends REST_Controller {
 
     }
     public function index_get() {
-            $this->checkgeofence('8','22.275334996986643','70.88614147123701');
+            //$this->checkgeofence('8','22.275334996986643','70.88614147123701');
     }
 
     public function index_post()   //Get GPS feed in device

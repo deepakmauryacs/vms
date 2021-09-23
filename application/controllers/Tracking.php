@@ -21,8 +21,6 @@ class Tracking extends CI_Controller {
 	{
 		$data = $this->db->select('s_googel_api_key')->from('settings')->get()->result_array();
 		if(isset($data[0]['s_googel_api_key']) && $data[0]['s_googel_api_key']!='') {
-		    echo "hello";die();
-
 		    $this->template->template_render('livelocation');
 		} else {
 			$this->session->set_flashdata('warningmessage', 'Please add google map key in settings page');
